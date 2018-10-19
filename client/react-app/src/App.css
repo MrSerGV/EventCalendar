@@ -1,0 +1,201 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.MainPage, .UserForecast, .User{
+  color: #000102;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+.MainPage{
+  text-align: center;
+}
+
+.Welcome{
+ padding-top: 50px;
+}
+
+h1 {
+  font-family: 'Kreon', serif;
+  font-size: 64px;
+  color: #00060A;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+  font-family: 'Kreon', serif;
+  font-size: 44px;
+  color:  #01080E;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color:#000407;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.Loading{
+  display: none;
+}
+
+.ButtonIssueAdd, .ButtonLogin, .ButtonLogOut,
+.ButtonIssue, .ButtonRemove, .ButtonAccount {
+  background: #E2ECF5;
+  border: 1px solid #6E9ECF;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 200;
+  font-size: 14px;
+  color: #000305;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+}
+
+.ButtonLogin, .ButtonLogOut, .ButtonAccount{
+  font-weight: 200;
+  font-size: 14px;
+  height: 30px;
+  width: 60px;
+  margin: 5px ;
+}
+
+.ButtonLogin{
+  margin: 5px auto ;
+}
+.Evevt{
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.ButtonLogOut, .ButtonAccount{
+  display: inline;
+}
+
+.ButtonIssue{
+  height: 37px;
+  width: 207px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.Input,.InputIssue {
+  background: rgba(237,240,242,0.65);
+  border: 1px solid #F5F8FA;
+  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  height: 37px;
+  width: 250px;
+  display: block;
+}
+
+.InputIssue{
+  margin-top: 54px;
+  margin-right: 20px;
+}
+
+.Input{
+  margin: 20px auto;
+}
+
+.Input:placeholder, .InputIssue:placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.Modal{
+  display: inline-block;
+  margin: 5px;
+}
+
+.LogOut{
+  text-align: center;
+  min-width: 290px;
+  padding-left: 40px;
+}
+
+.LogOutWelcome{
+  padding-top: 20px;
+}
+
+.IssueList{
+  min-width: 320px;
+}
+
+.WrappList{
+  text-align: center;
+  padding-top: 15px;
+  min-width: 320px;
+}
+
+A, A:visited, A:active{
+  color: #cecece;
+  text-decoration: none;
+}
+
+.WrappIssue{
+  display:flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  padding-left: 35px;
+}
+
+.Search{
+  display: inline-block;
+}
+
+.Clearfix:after{
+  content:"";
+  display: block;
+  clear:both;
+}
+
+.NavUserIssue{
+  display: flex;
+  flex-wrap: nowrap;
+  /* flex-direction: column; */
+}
+
+@media (max-width: 1279px){
+
+  .IssueList{
+    min-width: 320px;
+  }
+
+}
+
+@media (max-width: 1143px){
+  .UserIssue{
+     margin: 0 auto;
+  }
+  
+}
+
+@media (max-width: 1107px){
+  .NavUserIssue{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .WrappIssueCity{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+   
+}
